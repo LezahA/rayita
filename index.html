@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    polyline {
+      fill: none;
+      stroke: rgb(240, 81, 81);
+      stroke-width: 2;
+      stroke-dasharray: 5000;
+      stroke-dashoffset: 5000;
+      animation: drawLine 5s linear infinite;
+    }
+
+    @keyframes drawLine {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1500 800" preserveAspectRatio="meet">
+    <polyline
+      points="70,400 210,400 260,100 310,700 360,400
+      450,400 500,300 540,400 650,400
+      700,100 750,700 800,400
+      890,400 940,300 980,400 1070,400
+      1120,100 1170,700 1220,400 1400,400"
+      fill="none"
+    />
+  </svg>
+</body>
+</html>
+
